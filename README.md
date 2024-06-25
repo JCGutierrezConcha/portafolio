@@ -8,6 +8,6 @@ El portafolio contiene las siguientes secciones:
 - Skills, mediante imágenes y textos breves.
 - Hobbies, mediante imágenes y textos breves.
 - Formación académica, en que se detallan estudios realizados.
-- Experiencia profesioneal, en que se presentan proyectos realizados con sus respectivos enlaces, tanto al repositorio de Github como a una muestra del proyecto.
-- Contacto, a través de un formulario que permite el ingreso y envío de los datos, mediante el archivo **activacion.js** 
+- Experiencia profesional, en que se presentan proyectos realizados con sus respectivos enlaces, tanto al repositorio de Github como a una muestra del proyecto.
+- Contacto, a través de un formulario que permite el ingreso y envío de los datos y que está funcionando mediante el archivo **activacion.js** 
 
