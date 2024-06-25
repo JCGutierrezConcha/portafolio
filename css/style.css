@@ -1,0 +1,662 @@
+/* Paleta de colores */
+:root {
+    --azul-primario: #4c7fcc;
+    --azul-secundario-claro: #99bbda;
+    --footer-azul-oscuro: #09296e;
+    --button-repo-morado-oscuro: #461d6d;
+    --button-demo-amarillo: #ece92b;
+    --button-enviar-morado-oscuro: #461d6d;
+}
+
+/* Estilos generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+/* Diseño del menú */
+.menu-list {
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    padding: 0;
+    background: var(--azul-primario);
+    z-index: 1000;
+    padding: 20px;
+}
+
+
+.menu-list-items {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    text-decoration: double;
+    align-self: center;
+    text-align: center;
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.menu-list-items:hover {
+    color: white;
+}
+
+/* Deseño de la sección principal*/
+.section-principal {
+    width: 100%;
+    height: 100%;
+    background: var(--azul-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Diseño de los titulos y de la imagen de perfil*/
+
+.title-div {
+    width: 85%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.imagen-profile {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+
+/*Diseño de la sección principal la parte de los titulos*/
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.title-principal {
+    font-weight: bold;
+    font-size: 35px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.title-information {
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*Formato a la lista de las redes sociales*/
+
+.list-socialmedia {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.menu-list-socialmedia {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu-list-socialmedia img {
+    width: 35px;
+    margin: 0 auto;
+}
+
+.list-socialmedia .menu-list-socialmedia:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Diseño de la sección Sobre mí*/
+
+/*sction: about-me*/
+.about-me {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: var(--azul-secundario-claro);
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.about-paragraph {
+    display: flex;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px;
+    text-align: justify;
+}
+
+
+/* Diseño de la sección Skills y de Hobbies*/
+
+/*section skills*/
+.section-skills {
+    display: flex;
+    padding: 10px;
+    background: var(--azul-primario);
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Estilos a los titulos de skills, hobbies,formación académica, experiencia*/
+.about-little,
+.skills-title,
+.hobbies-title,
+.education-title,
+.experience-section-title,
+.contact-title {
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.skills-container {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.skills-img img {
+    width: 50px;
+    height: auto;
+    flex: none;
+    margin-top: 10px;
+    align-self: center;
+}
+
+/*Estilos a las li de skills, hobbies */
+.skills-name,
+.hobbies-name {
+    display: flex;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+
+/*Hobbies */
+
+.section-hobbies {
+    display: flex;
+    padding: 20px;
+    background: var(--azul-primario);
+    align-items: center;
+    flex-direction: column;
+}
+
+.hobbies-container {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.hobbies-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0.8;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.hobbies-img img {
+    width: 65px;
+    height: auto;
+    flex: none;
+}
+
+
+/*Estilos para la sección de Formaciones académicas*/
+
+.section-education {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    background: var(--azul-secundario-claro);
+    align-items: center;
+    flex-direction: column;
+}
+
+.education-container {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.education-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+    flex: 1;
+}
+
+
+.education-item-img img {
+    width: 110px;
+    height: 110px;
+    flex: none;
+    margin-top: 10px;
+}
+
+.education-item-title {
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.education-item-subtitle {
+    display: flex;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+/*Experiencia*/
+
+.section-experience {
+    display: flex;
+    padding: 20px;
+    background: var(--azul-primario);
+    align-items: center;
+    flex-direction: column
+}
+
+.experience-box {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.experience-box img {
+    width: 35%;
+    height: auto;
+    margin: 15px;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+/*Estilo para el juego número secreto*/
+
+.experience-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    order: -1;
+}
+
+/*Estilos de los titulos de la section experiencia*/
+
+.experience-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.experience-text {
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/*Estilo para los botones*/
+
+.experience-description {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+
+.experience-repo {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.experience-demo {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/*Botones repositorio y demo*/
+
+.experience-button-repo {
+    height: 60px;
+    width: 120px;
+    background-color: var(--button-repo-morado-oscuro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+
+.experience-button-repo:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+.experience-button-repo:active {
+    background-color: var(--button-repo-morado-oscuro);
+}
+
+.experience-button-demo {
+    height: 60px;
+    width: 120px;
+    background-color: var(--button-demo-amarillo);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.experience-button-demo:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+.experience-button-demo:active {
+    background-color: var(--button-demo-amarillo);
+}
+
+/*Diseño de la section contact*/
+
+.section-contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    background: var(--azul-secundario-claro);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.contact-left {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact-title-left {
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.contact-information-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.contact-information-item {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-information-item img {
+    width: 35px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+}
+
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.contact-subtitle {
+    display: flex;
+    font-size: 19px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    line-height: normal;
+}
+
+/*Diseño del formulario de contacto*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-input,
+.contact-textarea {
+    margin: 10px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+/*Estilos para el botón de enviar mensaje*/
+
+.contact-button {
+    height: 60px;
+    width: 120px;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--button-enviar-morado-oscuro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+.contact-button:hover {
+    transform: translateY(-5px) scale(1.0);
+}
+
+.contact-button:active {
+    background-color: darkred;
+}
+
+/*Diseño del footer*/
+
+.section-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--footer-azul-oscuro);
+}
+
+.footer {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: white;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+    /* Menú */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sección sobre mi*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formación Académica*/
+
+    /*Experiencia Profesional*/
+
+    /*Contacto*/
+
+    /*Footer*/
+
+}

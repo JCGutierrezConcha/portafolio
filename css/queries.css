@@ -1,0 +1,165 @@
+/*Estilos para los media querie tanto para mobiles como para tables*/
+
+/*Media query para pantalla de un max de 768px*/
+
+@media (max-width: 768px) {
+    .menu-list {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .title-principal {
+        font-size: 28px;
+    }
+
+    .title-information {
+        font-size: 20px;
+    }
+
+    .skills-box,
+    .hobbies-box,
+    .education-box,
+    .experience-box {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .skills-img img,
+    .hobbies-img img {
+        width: 40px;
+    }
+
+    .experience-box {
+        flex-direction: column;
+    }
+
+    .experience-box img {
+        width: 80%;
+        height: auto;
+    }
+
+    .experience-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .form-contact {
+        width: 90%;
+    }
+
+    .title-div {
+        flex-direction: column;
+    }
+
+    .title-container {
+        width: 80%;
+    }
+
+    .imagen-profile {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section-education {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .education-container {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .education-box {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .contact-left {
+        display: none;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+}
+
+/*Media query para pantalla de un max de 425px*/
+
+@media (max-width: 425px) {
+    .menu-list {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .title-principal {
+        font-size: 24px;
+    }
+
+    .title-information {
+        font-size: 18px;
+    }
+
+    .skills-box,
+    .hobbies-box,
+    .education-box,
+    .experience-box {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .skills-img img,
+    .hobbies-img img {
+        width: 35px;
+    }
+
+    .experience-box {
+        flex-direction: column;
+    }
+
+    .experience-box img {
+        width: 70%;
+        height: auto;
+    }
+
+    .experience-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .form-contact {
+        width: 95%;
+    }
+
+    .imagen-profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title-container {
+        width: 100%;
+    }
+
+    .contact-left {
+        display: none;
+    }
+
+    .contact-information {
+        width: 100%;
+    }
+
+    .section-education {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .education-container {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .education-box {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
